@@ -59,6 +59,7 @@ class accessPlist {
         }
         return nil
     }
+    
     //setters
     func set_userInfo(id: String, value:String) {
         

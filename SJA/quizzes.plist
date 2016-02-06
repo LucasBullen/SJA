@@ -1,14 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   quizzes.plist
-   SJA
-
-   Created by Lucas Bullen on 2016-02-06.
-   Copyright (c) 2016 Lucas Bullen. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>progress</key>
+	<integer>1</integer>
+	<key>1</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Tree?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>0</string>
+	</dict>
+	<key>2</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Rock?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>1</string>
+	</dict>
+	<key>3</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Human?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>2</string>
+	</dict>
+	<key>4</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Leaf?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>3</string>
+	</dict>
+	<key>5</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Tree?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>0</string>
+	</dict>
+	<key>6</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Tree?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>0</string>
+	</dict>
+	<key>7</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Tree?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>0</string>
+	</dict>
+	<key>8</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Tree?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>0</string>
+	</dict>
+	<key>9</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Tree?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>0</string>
+	</dict>
+	<key>10</key>
+	<dict>
+		<key>status</key>
+		<false/>
+		<key>question</key>
+		<string>What is a Tree?</string>
+		<key>answers</key>
+		<array>
+			<string>A tree</string>
+			<string>A rock</string>
+			<string>A human</string>
+			<string>a leaf</string>
+		</array>
+		<key>right</key>
+		<string>0</string>
+	</dict>
+</dict>
 </plist>

@@ -23,14 +23,11 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var nameField: UITextField!
-    
-    @IBOutlet weak var address: UILabel!
+
     @IBOutlet weak var addressField: UITextField!
-    
-    @IBOutlet weak var phone: UILabel!
+
     @IBOutlet weak var phoneField: UITextField!
-    
-    @IBOutlet weak var email: UILabel!
+
     @IBOutlet weak var emailField: UITextField!
     
     @IBOutlet weak var date: UILabel!
@@ -47,16 +44,13 @@ class ProfileViewController: UIViewController {
         
         // Setting up label titles
         self.report.text = "St. John Ambulance: Report Card"
-        self.name.text = accessPlist().get_userInfo("title")
-        self.address.text = "Address: "
-        self.phone.text = "Phone: "
-        self.email.text = "Email: "
+        self.name.text = accessPlist().get_userInfo("title")!
         
         // Load user info from the dictionary
-        self.nameField.text = accessPlist().get_userInfo("username")
-        self.addressField.text = accessPlist().get_userInfo("address")
-        self.phoneField.text = accessPlist().get_userInfo("phone")
-        self.emailField.text = accessPlist().get_userInfo("email")
+        self.nameField.text = accessPlist().get_userInfo("username")!
+        self.addressField.text = accessPlist().get_userInfo("address")!
+        self.phoneField.text = accessPlist().get_userInfo("phone")!
+        self.emailField.text = accessPlist().get_userInfo("email")!
         
         // Sets the current date from user's device
         let currentDate = NSDate()
@@ -119,6 +113,22 @@ class ProfileViewController: UIViewController {
         // Setting new grades and flavour text
         self.safetyGrade.text = grade
         self.safetyPrompt.text = flavour
+    }
+    
+    @IBAction func updateField(sender: AnyObject){
+    //When one of the four text objects are updated
+        var reggaeScore = 1;
+        
+        self.nameField.text = accessPlist().get_userInfo("username")
+        self.addressField.text = accessPlist().get_userInfo("address")
+        self.phoneField.text = accessPlist().get_userInfo("phone")
+        self.emailField.text = accessPlist().get_userInfo("email")
+        
+        accessPlist().set_userInfo("username", value: "\(self.nameField.text)")
+        
+        if (self.nameField.text!.count > 6){
+        
+        }
         
     }
     

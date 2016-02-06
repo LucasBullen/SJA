@@ -459,6 +459,9 @@
                                         <rect key="frame" x="170" y="30" width="139" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="updateField:" destination="BCz-WG-CeE" eventType="editingDidEnd" id="8Qj-re-UyP"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBt-g3-vPY">
                                         <rect key="frame" x="345" y="91" width="54" height="21"/>
@@ -476,16 +479,25 @@
                                         <rect key="frame" x="433" y="30" width="139" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="updateField:" destination="BCz-WG-CeE" eventType="editingDidEnd" id="PB1-Bb-irf"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="La La Land" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9Q-Wo-z0e">
                                         <rect key="frame" x="170" y="82" width="139" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="updateField:" destination="BCz-WG-CeE" eventType="editingDidEnd" id="GzP-P7-dpT"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jDoe@j.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LUi-Yy-2TX">
                                         <rect key="frame" x="433" y="82" width="139" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="updateField:" destination="BCz-WG-CeE" eventType="editingDidEnd" id="L3J-KD-TWh"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registration Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIE-9P-Xoi">
                                         <rect key="frame" x="134" y="253" width="181" height="23"/>
@@ -568,15 +580,12 @@
                     <tabBarItem key="tabBarItem" title="Profile" id="uEW-7A-pCQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="address" destination="qiG-MI-5MO" id="H01-bS-xew"/>
                         <outlet property="addressField" destination="U9Q-Wo-z0e" id="vK7-ub-eNf"/>
                         <outlet property="date" destination="7Gq-uu-S5N" id="Mxf-nr-bTk"/>
-                        <outlet property="email" destination="kBt-g3-vPY" id="euG-dN-ruw"/>
                         <outlet property="emailField" destination="LUi-Yy-2TX" id="y4R-Di-gVc"/>
                         <outlet property="infoScore" destination="bKH-ed-LA3" id="aQ7-ti-Z6z"/>
-                        <outlet property="name" destination="PIo-ca-daV" id="ujB-hr-gdX"/>
+                        <outlet property="name" destination="PIo-ca-daV" id="uuW-Vw-Vrl"/>
                         <outlet property="nameField" destination="QNH-YC-3Vm" id="mKD-al-5gX"/>
-                        <outlet property="phone" destination="mGt-tQ-cjU" id="ELY-je-f02"/>
                         <outlet property="phoneField" destination="2PW-xA-0D0" id="XIr-ag-mBc"/>
                         <outlet property="quizScore" destination="rdu-IG-P85" id="ZwR-fq-yNP"/>
                         <outlet property="regScore" destination="w0n-OW-a35" id="uDS-EH-d3C"/>

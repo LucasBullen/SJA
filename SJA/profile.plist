@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>title</key>
+	<string></string>
+	<key>address</key>
+	<string>111 home</string>
+	<key>phone</key>
+	<string>123</string>
+	<key>quizScore</key>
+	<string>0</string>
+	<key>quizScoreMax</key>
+	<string>600</string>
+	<key>infoScore</key>
+	<string>0</string>
+	<key>infoScoreMax</key>
+	<string>300</string>
+	<key>username</key>
+	<string>Chris</string>
+	<key>email</key>
+	<string>chris@chris.com</string>
+	<key>regScore</key>
+	<string>0</string>
+	<key>regScoreMax</key>
+	<string>100</string>
+</dict>
 </plist>

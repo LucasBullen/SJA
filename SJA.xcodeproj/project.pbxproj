@@ -204,6 +204,7 @@
 				A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */,
 				26B91C591C6664B900F505A3 /* PlacesTableViewCell.swift in Sources */,
 				A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */,
+				2B60DCEC1C66AA7500BFD2B4 /* Score.swift in Sources */,
 				A01FA5C01C61C40300BDA36C /* StoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sjamoblie.SJA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sjamoblie.SJA;
 				PRODUCT_NAME = "$(TARGET_NAME)";

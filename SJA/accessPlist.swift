@@ -36,14 +36,83 @@ class accessPlist {
         }
         return nil
     }
-    func get_event(id: String)->NSDictionary?{
+    func get_class(id: String)->NSArray?{
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
-        let path = documentsDirectory.stringByAppendingPathComponent("profile.plist")
+        let path = documentsDirectory.stringByAppendingPathComponent("classes.plist")
         if let dict = NSMutableDictionary(contentsOfFile: path){
-            return dict.objectForKey("event_info") as? NSDictionary
+            return dict.objectForKey("Courses")?.objectForKey(id)?.objectForKey("date") as? NSArray
         }else{
-            if let privPath = NSBundle.mainBundle().pathForResource("profile", ofType: "plist"){
+            if let privPath = NSBundle.mainBundle().pathForResource("classes", ofType: "plist"){
+                if let dict = NSMutableDictionary(contentsOfFile: privPath){
+                    if let event_info = dict.objectForKey("Courses")?.objectForKey(id)?.objectForKey("date"){
+                        return event_info as? NSArray
+                    }else{
+                        print("error_read_2")
+                    }
+                }else{
+                    print("error_read")
+                }
+            }else{
+                print("error_read")
+            }
+        }
+        return nil
+    }
+    func get_class_info(id: String, value:String)->NSString?{
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("classes.plist")
+        if let dict = NSMutableDictionary(contentsOfFile: path){
+            return dict.objectForKey("Courses")?.objectForKey(id)?.objectForKey(value) as? NSString
+        }else{
+            if let privPath = NSBundle.mainBundle().pathForResource("classes", ofType: "plist"){
+                if let dict = NSMutableDictionary(contentsOfFile: privPath){
+                    if let event_info = dict.objectForKey("Courses")?.objectForKey(id)?.objectForKey(value){
+                        return event_info as? NSString
+                    }else{
+                        print("error_read_2")
+                    }
+                }else{
+                    print("error_read")
+                }
+            }else{
+                print("error_read")
+            }
+        }
+        return nil
+    }
+    func get_quiz_progress()->Int?{
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("quizzes.plist")
+        if let dict = NSMutableDictionary(contentsOfFile: path){
+            return dict.objectForKey("progress") as? Int
+        }else{
+            if let privPath = NSBundle.mainBundle().pathForResource("quizzes", ofType: "plist"){
+                if let dict = NSMutableDictionary(contentsOfFile: privPath){
+                    if let event_info = dict.objectForKey("progress"){
+                        return event_info as? Int
+                    }else{
+                        print("error_read_2")
+                    }
+                }else{
+                    print("error_read")
+                }
+            }else{
+                print("error_read")
+            }
+        }
+        return nil
+    }
+    func get_quiz_question(id: Int)->NSDictionary?{
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("quizzes.plist")
+        if let dict = NSMutableDictionary(contentsOfFile: path){
+            return dict.objectForKey(id) as? NSDictionary
+        }else{
+            if let privPath = NSBundle.mainBundle().pathForResource("quizzes", ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     if let event_info = dict.objectForKey(id){
                         return event_info as? NSDictionary
@@ -59,6 +128,7 @@ class accessPlist {
         }
         return nil
     }
+    
     //setters
     func set_userInfo(id: String, value:String) {
         

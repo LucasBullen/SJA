@@ -21,6 +21,8 @@ class ProfileViewController: UIViewController {
     */
     
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var nameField: UITextField!
+
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var safetyGrade: UILabel!
     @IBOutlet weak var regScore: UILabel!
@@ -35,6 +37,10 @@ class ProfileViewController: UIViewController {
         dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
         let date = dateFormatter.stringFromDate(currentDate)
         self.date.text = date
+        
+//        Setting up user info
+        self.nameField.text = accessPlist.get_userInfo(accessPlist)
+        
 //        var name = plist.get() //Key userName
 //        var grade
 //        var regScore

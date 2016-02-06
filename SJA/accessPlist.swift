@@ -13,14 +13,14 @@ import SystemConfiguration
 //logic for calling the Plist
 class accessPlist {
     //getters
-    func get(list: String, id: String)->NSDictionary?{
+    func get_userInfo(id: String)->NSDictionary?{
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
-        let path = documentsDirectory.stringByAppendingPathComponent("\(list).plist")
+        let path = documentsDirectory.stringByAppendingPathComponent("profile.plist")
         if let dict = NSMutableDictionary(contentsOfFile: path){
             return dict.objectForKey("event_info") as? NSDictionary
         }else{
-            if let privPath = NSBundle.mainBundle().pathForResource(list, ofType: "plist"){
+            if let privPath = NSBundle.mainBundle().pathForResource("profile", ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     if let event_info = dict.objectForKey(id){
                         return event_info as? NSDictionary
@@ -37,11 +37,11 @@ class accessPlist {
         return nil
     }
     //setters
-    func set(list: String, id: String, value:String) {
+    func set_userInfo(id: String, value:String) {
         
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
-        let path = documentsDirectory.stringByAppendingPathComponent("\(list).plist")
+        let path = documentsDirectory.stringByAppendingPathComponent("profile.plist")
         
         if let dict = NSMutableDictionary(contentsOfFile: path){
             dict.setObject(value, forKey: id)
@@ -51,7 +51,7 @@ class accessPlist {
                 print("plist_write_error")
             }
         }else{
-            if let privPath = NSBundle.mainBundle().pathForResource(list, ofType: "plist"){
+            if let privPath = NSBundle.mainBundle().pathForResource("profile", ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     dict.setObject(value, forKey: id)
                     if dict.writeToFile(path, atomically: true){

@@ -77,8 +77,8 @@ class InfoViewController: UIViewController {
     
     @IBAction func q3 (sender : AnyObject){
         let linkAttribute = [NSLinkAttributeName: "http://www.sja.ca/English/How-You-Can-Help/Pages/Volunteer/Volunteer-Landing.aspx"]
-        let theString = NSMutableAttributedString(string: "this link", attributes:linkAttribute)
-        outputText.text = "Visit"; theString; "to learn more about becoming a volunteer with SJA!"
+        let theString = NSMutableAttributedString(string: "Click here to learn more about becoming a volunteer with SJA!", attributes:linkAttribute)
+        outputText.attributedText = theString
     }
     
     @IBAction func q4 (sender : AnyObject){

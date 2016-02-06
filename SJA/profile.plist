@@ -2,21 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>username</key>
+	<key>title</key>
 	<string></string>
 	<key>address</key>
-	<string></string>
+	<string>111 home</string>
 	<key>phone</key>
-	<string></string>
+	<string>123</string>
+	<key>quizScore</key>
+	<string>0</string>
+	<key>quizScoreMax</key>
+	<string>600</string>
+	<key>infoScore</key>
+	<string>0</string>
+	<key>infoScoreMax</key>
+	<string>300</string>
+	<key>username</key>
+	<string>Chris</string>
 	<key>email</key>
-	<string></string>
-	<key>safetyScore</key>
-	<string></string>
-	<key></key>
-	<string></string>
-	<key>New item - 3</key>
-	<string></string>
-	<key>New item - 4</key>
-	<string></string>
+	<string>chris@chris.com</string>
+	<key>regScore</key>
+	<string>0</string>
+	<key>regScoreMax</key>
+	<string>100</string>
 </dict>
 </plist>

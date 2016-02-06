@@ -10,9 +10,21 @@ import UIKit
 
 class ClassesViewController: UIViewController {
     
+    var courses = ["EMRG A", "STANDARD A", "STANDARD C"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBOutlet weak var course1: UIButton!
+    @IBOutlet weak var course2: UIButton!
+    @IBOutlet weak var course3: UIButton!
+    @IBOutlet weak var scollview: UIScrollView!
+    
+    @IBAction func course1Select(sender: UIButton) {
+    //    var date = accessPlist().get_class("EMRG A")
+        
     }
     
     override func didReceiveMemoryWarning() {

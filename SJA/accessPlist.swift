@@ -20,7 +20,7 @@ class accessPlist {
         if let dict = NSMutableDictionary(contentsOfFile: path){
             return dict.objectForKey("event_info") as? NSDictionary
         }else{
-            if let privPath = NSBundle.mainBundle().pathForResource("data", ofType: "plist"){
+            if let privPath = NSBundle.mainBundle().pathForResource(list, ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     if let event_info = dict.objectForKey(id){
                         return event_info as? NSDictionary
@@ -37,30 +37,23 @@ class accessPlist {
         return nil
     }
     //setters
-    func set(id: String, location:String, title:String, description:String, start_time:String,image:String) {
-        var event = [String: String]()
-        event["location"] = location
-        event["title"] = title
-        event["description"] = description
-        event["start_time"] = start_time
-        event["create_time"] = ""
-        event["image"] = image
+    func set(list: String, id: String, value:String) {
         
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
-        let path = documentsDirectory.stringByAppendingPathComponent("data.plist")
+        let path = documentsDirectory.stringByAppendingPathComponent("\(list).plist")
         
         if let dict = NSMutableDictionary(contentsOfFile: path){
-            dict.objectForKey("event_info")!.setObject(event, forKey: id)
+            dict.setObject(value, forKey: id)
             if dict.writeToFile(path, atomically: true){
                 print("plist_write")
             }else{
                 print("plist_write_error")
             }
         }else{
-            if let privPath = NSBundle.mainBundle().pathForResource("data", ofType: "plist"){
+            if let privPath = NSBundle.mainBundle().pathForResource(list, ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
-                    dict.objectForKey("event_info")!.setObject(event, forKey: id)
+                    dict.setObject(value, forKey: id)
                     if dict.writeToFile(path, atomically: true){
                         print("plist_write")
                     }else{

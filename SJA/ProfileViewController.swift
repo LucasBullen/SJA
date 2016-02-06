@@ -19,13 +19,22 @@ class ProfileViewController: UIViewController {
     Pull the
     
     */
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var safetyGrade: UILabel!
+    @IBOutlet weak var regScore: UILabel!
+    @IBOutlet weak var quizScore: UILabel!
+    @IBOutlet weak var infoScore: UILabel!
+
+    
     func loadInfo(){
 //        Sets the current date from user's device
         let currentDate = NSDate()
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
-        var date = dateFormatter.stringFromDate(currentDate)
-        
+        let date = dateFormatter.stringFromDate(currentDate)
+        self.date.text = date
 //        var name = plist.get() //Key userName
 //        var grade
 //        var regScore
@@ -38,8 +47,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadInfo()
-        self.view.backgroundColor = UIColor.grayColor()
-
+                self.view.backgroundColor = UIColor.grayColor()
+        
     }
     
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B60DCEC1C66AA7500BFD2B4 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B60DCEB1C66AA7500BFD2B4 /* Score.swift */; settings = {ASSET_TAGS = (); }; };
 		A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */; };
 		A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */; };
 		A01FA5AA1C61BF8300BDA36C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A91C61BF8300BDA36C /* InfoViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B60DCEB1C66AA7500BFD2B4 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		A01FA5A21C61BF8300BDA36C /* SJA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		A01FA5A41C61BF8300BDA36C /* SJA */ = {
 			isa = PBXGroup;
 			children = (
+				2B60DCEB1C66AA7500BFD2B4 /* Score.swift */,
 				A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */,
 				A01FA5B91C61C0FC00BDA36C /* ChecklistsViewController.swift */,
 				A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */,
@@ -180,6 +183,7 @@
 				A01FA5BC1C61C19100BDA36C /* ClassesViewController.swift in Sources */,
 				A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */,
 				A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */,
+				2B60DCEC1C66AA7500BFD2B4 /* Score.swift in Sources */,
 				A01FA5C01C61C40300BDA36C /* StoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

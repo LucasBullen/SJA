@@ -15,6 +15,8 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var values : UIButton!
     @IBOutlet weak var why : UIButton!
     @IBOutlet weak var outputText : UITextView!
+    @IBOutlet weak var faqs : UIButton!
+
     
     @IBAction func missionStatement (sender: AnyObject){
         outputText.text = "To enable Canadians to improve their health," +
@@ -55,10 +57,14 @@ class InfoViewController: UIViewController {
         "fund our work in the community. Through research, development and delivery of" +
         "first aid training and community service programs, we are able to meet our mission" +
         "of enabling Canadians to improve their health, safety and quality of life."
-        
-        
+    }
+    
+    @IBAction func questions (sender: AnyObject){
+        let url = NSURL(string: "http://on.shopsafetyproducts.ca/faqs.php")!
+        UIApplication.sharedApplication().openURL(url)
     }
 
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

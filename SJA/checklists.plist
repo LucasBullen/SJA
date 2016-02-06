@@ -1,14 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   checklists.plist
-   SJA
-
-   Created by Lucas Bullen on 2016-02-06.
-   Copyright (c) 2016 Lucas Bullen. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>VehicleDataState</key>
+	<array>
+		<false/>
+		<false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+	</array>
+	<key>GrabNGoDataState</key>
+	<array>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+	</array>
+	<key>CampingDataState</key>
+	<array>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+        <false/>
+    </array>
+	<key>WorkDataState</key>
+	<array>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+	</array>
+	<key>WorkDataSet</key>
+	<array>
+		<string> Bottled water (3 day supply) </string>
+		<string> Non-perishable snack foods </string>
+		<string> Portable radio </string>
+		<string> OK and HELP signs </string>
+		<string> Quarters for a pay phone </string>
+		<string> Whistle (3 short blasts for help) </string>
+		<string> Flashlight , Candles and matches </string>
+		<string> Identification, contact lists </string>
+		<string> Medical records </string>
+		<string> Photo of family members </string>
+		<string> Prescribed medications </string>
+		<string> Hand sanitizers, soap and towel </string>
+		<string> Toothbrush, toothpaste </string>
+		<string> Feminine hygiene products </string>
+		<string> Emergency blanket </string>
+		<string> Warm clothes, sturdy footwear </string>
+		<string> Hat, gloves, and socks </string>
+		<string> Waterproof poncho </string>
+		<string> Small first aid kit </string>
+		<string> Emergency flares </string>
+		<string> Fire extinguisher </string>
+		<string> Compass and road map </string>
+		<string> Sand, cat litter or salt </string>
+		<string> Shovel and booster cables </string>
+		<string> Ice scraper and brush </string>
+	</array>
+	<key>CampingDataSet</key>
+	<array>
+		<string>Tent or large tarp</string>
+		<string>Sleeping bags or warm blankets</string>
+		<string>Air mattress or thermal pad</string>
+		<string>Small camping stove</string>
+		<string>Small fuel tank</string>
+		<string>Lighter or matches</string>
+		<string>Cooking pot</string>
+		<string>Eating utensils</string>
+		<string>Paper towels and cleaning kit</string>
+		<string>Sturdy bucket</string>
+		<string></string>
+		<string>Child&apos;s toilet seat</string>
+		<string>Large garbage bags</string>
+		<string>Cat litter</string>
+		<string>Hand cleaning supplies</string>
+	</array>
+	<key>GrabNGoDataSet</key>
+	<array>
+		<string> 2 litres of water per person </string>
+		<string> Pre-packaged snack foods </string>
+		<string> Portable radio </string>
+		<string> Extra batteries – if needed </string>
+		<string> Paper and waterproof marker </string>
+		<string> OK and HELP signs </string>
+		<string> Whistle (3 short blasts for help) </string>
+		<string> Flashlight </string>
+		<string> Identification, contact lists </string>
+		<string> Medical records </string>
+		<string> Photos of family members </string>
+		<string> Spare eye glasses </string>
+		<string> Medications </string>
+		<string> Spare house and car keys </string>
+		<string> Toys for children </string>
+		<string> Quarters for pay phones </string>
+		<string> Toilet paper, garbage bags </string>
+		<string> Small bucket with lid </string>
+		<string> Hand sanitizers or soap </string>
+		<string> Towel or paper towels </string>
+		<string> Toothpaste, toothbrush </string>
+		<string> Deodorant </string>
+		<string> Waterproof poncho </string>
+		<string> Change of clothes </string>
+		<string> Cold weather clothes </string>
+		<string> First aid kit and a whistle </string>
+		<string> Work boots, gloves, safety goggles </string>
+		<string> Respirator mask (N95) </string>
+		<string> Duct tape and multi-tool </string>
+		<string> Garbage bags (large and small) </string>
+		<string> Candles and matches or a lighter </string>
+		<string> Sturdy shoes or boots </string>
+		<string> Hat, socks and underwear </string>
+		<string> Warm jacket and pants </string>
+		<string> Raingear </string>
+		<string> Gloves or mittens </string>
+		<string> Emergency blanket </string>
+		<string> Thermal underwear </string>
+		<string> Tent or large tarp </string>
+		<string> Sleeping bag or warm blankets </string>
+		<string> Air mattress with manual pump </string>
+		<string> Thermal pad </string>
+		<string> Ground sheet </string>
+		<string> Small cook stove </string>
+		<string> Barbeque with fuel </string>
+		<string> Pot and cooking utensils </string>
+		<string> Paper plates, plastic cups </string>
+		<string> Eating utensils </string>
+		<string> Solid waste disposal kit </string>
+		<string> Liquid waste disposal kit </string>
+	</array>
+	<key>VehicleDataSet</key>
+	<array>
+		<string> Bottled water (3 day supply) </string>
+		<string> Non-perishable snack foods </string>
+		<string> Portable radio </string>
+		<string> Candles and matches </string>
+		<string> Identification, contact lists </string>
+		<string> Medical records </string>
+		<string> Photo of family members </string>
+		<string> Prescribed medications </string>
+		<string> Toothbrush, toothpaste </string>
+		<string> Feminine hygiene products </string>
+		<string> Warm clothes, sturdy footwear </string>
+		<string> Small first aid kit </string>
+	</array>
+</dict>
 </plist>

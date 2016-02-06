@@ -13,7 +13,30 @@ import SystemConfiguration
 //logic for calling the Plist
 class accessPlist {
     //getters
-    func get_userInfo(id: String)->NSDictionary?{
+    func get_userInfo(id: String)->String?{
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("profile.plist")
+        if let dict = NSMutableDictionary(contentsOfFile: path){
+            return dict.objectForKey("event_info") as? String
+        }else{
+            if let privPath = NSBundle.mainBundle().pathForResource("profile", ofType: "plist"){
+                if let dict = NSMutableDictionary(contentsOfFile: privPath){
+                    if let event_info = dict.objectForKey(id){
+                        return event_info as? String
+                    }else{
+                        print("error_read_2")
+                    }
+                }else{
+                    print("error_read")
+                }
+            }else{
+                print("error_read")
+            }
+        }
+        return nil
+    }
+    func get_event(id: String)->NSDictionary?{
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
         let path = documentsDirectory.stringByAppendingPathComponent("profile.plist")

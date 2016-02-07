@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>title</key>
-	<string></string>
+	<string>0</string>
 	<key>address</key>
 	<string>111 home</string>
 	<key>phone</key>
-	<string>123</string>
+	<string>123-456</string>
 	<key>quizScore</key>
 	<string>0</string>
 	<key>quizScoreMax</key>
-	<string>600</string>
+	<string>15</string>
 	<key>infoScore</key>
 	<string>0</string>
 	<key>infoScoreMax</key>
-	<string>300</string>
+	<string>40</string>
 	<key>username</key>
 	<string>Chris</string>
 	<key>email</key>
@@ -23,6 +23,6 @@
 	<key>regScore</key>
 	<string>0</string>
 	<key>regScoreMax</key>
-	<string>100</string>
+	<string>4</string>
 </dict>
 </plist>

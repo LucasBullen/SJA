@@ -12,8 +12,23 @@ import UIKit
 class ListContentsTableViewController :
 UITableViewController {
     
-    var checked = [false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false] // Have an array equal to the number of cells in your table
     
+    var checked = [Bool]()
+    
+    var listNumber = -1
+    
+
+    let GrabNGoDataSet = accessPlist().get_lists_set("GrabNGoDataSet")
+    var gngChecked = accessPlist().get_lists_set ("GrabNGoDataState")
+    
+    let VehicleDataSet = accessPlist().get_lists_set("VehicleDataSet")
+    var vehicleChecked = accessPlist().get_lists_set ("VehicleDataState")
+    
+    let WorkDataSet = accessPlist().get_lists_set("WorkDataSet")
+    var workChecked = accessPlist().get_lists_set ("WorkDataState")
+    
+    let CampingDataSet = accessPlist().get_lists_set("CampingDataSet")
+    var campChecked = accessPlist().get_lists_set ("CampingDataState")
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
@@ -26,22 +41,22 @@ UITableViewController {
             else
             {
                 cell.accessoryType = .Checkmark
-                checked[indexPath.row] = true
+                if listNumber == 1{
+                    checked = gngChecked
+                    gngChecked[indexPath.row] = true }
+                if listNumber == 2{
+                    checked = vehicleChecked
+                    vehicleChecked[indexPath.row] = true }
+                if listNumber == 3{
+                    checked = workChecked
+                    workChecked[indexPath.row] = true }
+                if listNumber == 4{
+                    checked = campChecked
+                    campChecked[indexPath.row] = true }
+                
             }
-        }    
+        }
     }
-    
-    var listNumber = -1
-    
-    
-    let GrabNGoDataSet = ["2 litres of water per person", "Pre-packaged snack foods","Portable radio","Extra batteries – if needed","Paper and waterproof marker","OK and HELP signs","Whistle (3 short blasts for help)","Flashlight","Identification, contact lists","Medical records","Photos of family members","Spare eye glasses","Medications","Spare house and car keys","Toys for children","Quarters for pay phones","Toilet paper, garbage bags","Small bucket with lid"," Hand sanitizers or soap"," Towel or paper towels","Toothpaste, toothbrush","Deodorant","Emergency blanket","Waterproof poncho","Change of clothes","cold weather clothes","First aid kit and a whistle","Work boots, gloves, safety goggles","Respirator mask (N95).","Duct tape and multi-tool","Garbage bags (large and small)","Candles and matches or a lighter","Sturdy shoes or boots","Hat, socks and underwear","Warm jacket and pants","Raingear","Gloves or mittens","Thermal underwear","Tent or large tarp","Sleeping bag or warm blankets","Air mattress with manual pump","Thermal pad","Ground sheet","Small cook stove","Barbeque with fuel","Pot and cooking utensils","Paper plates, plastic cups","Eating utensils","Solid waste disposal kit","Liquid waste disposal kit"]
-    
-    let VehicleDataSet = ["Bottled water (3 day supply)","Non-perishable snack foods","Portable radio","OK and HELP signs","Quarters for a pay phone","Whistle (3 short blasts for help)","Flashlight","Candles and matches","Identification, contact lists","Medical records","Photo of family members","Prescribed medications","Hand sanitizers, soap and towel","Toothbrush, toothpaste","Feminine hygiene products","Emergency blanket","Warm clothes, sturdy footwear","Hat, gloves, and socks","Waterproof poncho","Small first aid kit","Emergency flares","Fire extinguisher","Compass and road map","Sand, cat litter or salt","Shovel and booster cables","Ice scraper and brush"]
-    
-    let WorkDataSet = ["Bottled water (3 day supply)","Non-perishable snack foods","Portable radio","Flashlight","Extra batteries","Candles and matches"," Identification, contact lists","Medical records","Photo of family members","Prescribed medications","Toilet paper, garbage bags","Small bucket with lid","Toothbrush, toothpaste","Feminine hygiene products","Emergency blanket","Warm outerwear, sturdy footwear","Small first aid kit"]
-    
-    let CampingDataSet = ["Tent or large tarp","Sleeping bags or warm blankets","Air mattress or thermal pad","Small camping stove","Small fuel tank","Lighter or matches","Cooking pot","Eating utensils","Paper towels and cleaning kit","Sturdy bucket","Child's toilet seat","Large garbage bags","Cat litter","Hand cleaning supplies"]
-    
     
     override func numberOfSectionsInTableView
         (tableView: UITableView) -> Int {

@@ -23,8 +23,7 @@ class QuizzesViewController: UIViewController {
     
     @IBOutlet weak var response: UILabel!
     @IBOutlet weak var next: UIButton!
-    
-    var progress: Int = 0
+    let progress: Int = Int(accessPlist().get_quiz_progress()!)
     override func viewDidLoad() {
         loadQ()
         super.viewDidLoad()
@@ -33,8 +32,8 @@ class QuizzesViewController: UIViewController {
     }
     
     func loadQ(){
-        progress = accessPlist().get_quiz_progress()!
-        let questionInfo: NSDictionary = accessPlist().get_quiz_question(progress)!
+        let questionInfo: NSDictionary = accessPlist().get_quiz_question("\(progress)")!
+        print("prog:\(progress)")
         question.text = questionInfo.objectForKey("question")! as? String
         answerOne.text = questionInfo.objectForKey("answers")![0] as? String
         answerTwo.text = questionInfo.objectForKey("answers")![1] as? String
@@ -43,7 +42,11 @@ class QuizzesViewController: UIViewController {
     }
     
     @IBAction func checkAnswer(sender: AnyObject) {
-        
+        let questionInfo: NSDictionary = accessPlist().get_quiz_question("\(progress)")!
+        accessPlist().set_quiz_progress("\(progress)")
+        //if (sender.tag == questionInfo.objectForKey("right")){
+            
+        //}
     }
     
     override func didReceiveMemoryWarning() {

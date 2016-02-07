@@ -10,14 +10,14 @@ import UIKit
 
 class ClassesViewController: UIViewController {
     
-    var courses = ["EMRG A", "STANDARD A", "STANDARD C"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBOutlet weak var scrollDates: UIScrollView!
+    @IBOutlet weak var costLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
     
     func buttonPressed(sender: UIButton!) {
@@ -25,18 +25,16 @@ class ClassesViewController: UIViewController {
         //SJAApi().Request("goToEvent", parameter: JSON(parameters), onCompletion: complete)
         
         UIApplication.sharedApplication().openURL(NSURL(string: "https://portal.sja.ca/eRegistrationSearch/")!)
-        
-        scrollDates.subviews.forEach({ $0.removeFromSuperview() })
     }
     
     func CreateObjects(date : NSArray, _ buttonClicked : String) {
         var spacer: CGFloat
         spacer = 50
-        for comments in date {
-            var label = UILabel(frame: CGRectMake(0, 0, 300, 50))
+        for courseDate in date {
+            let label = UILabel(frame: CGRectMake(0, 0, 300, 50))
             label.numberOfLines = 2
             label.center = CGPointMake(200, 0 + spacer)
-            label.text = comments as! String
+            label.text = courseDate as? String
             spacer = spacer + 50
             
             let button = UIButton();
@@ -64,28 +62,55 @@ class ClassesViewController: UIViewController {
         }
     }
     
+    func changeInfo(name : NSString, _ cost : NSString, _ time : NSString) {
+        infoLabel.frame = CGRectMake(0, 0, 300, 50)
+        costLabel.frame = CGRectMake(0, 0, 300, 50)
+        timeLabel.frame = CGRectMake(0, 0, 300, 50)
+        
+        infoLabel.text = name as String
+        costLabel.text = cost as String
+        timeLabel.text = time as String
+        
+    }
+    
     @IBAction func EmrgA(sender: AnyObject) {
         scrollDates.subviews.forEach({ $0.removeFromSuperview() })
-        var buttonClicked = "ERMG A"
-        var date = accessPlist().get_class("EMRG A")
+        let buttonClicked = "ERMG A"
+        let date = accessPlist().get_class("EMRG A")
+        
+        let coursename = accessPlist().get_class_info("EMRG A", value: "name")
+        let coursecost = accessPlist().get_class_info("EMRG A", value: "cost")
+        let coursetime = accessPlist().get_class_info("EMRG A", value: "time")
+        
         CreateObjects(date!, buttonClicked)
+        changeInfo(coursename!, coursecost!, coursetime!)
 
     }
     
     @IBAction func StandardA(sender: AnyObject) {
         scrollDates.subviews.forEach({ $0.removeFromSuperview() })
-        var buttonClicked = "STANDARD A"
-        var date = accessPlist().get_class("STANDARD A")
+        let buttonClicked = "STANDARD A"
+        let date = accessPlist().get_class("STANDARD A")
+        
+        let coursename = accessPlist().get_class_info("STANDARD A", value: "name")
+        let coursecost = accessPlist().get_class_info("STANDARD A", value: "cost")
+        let coursetime = accessPlist().get_class_info("STANDARD A", value: "time")
         CreateObjects(date!, buttonClicked)
+        changeInfo(coursename!, coursecost!, coursetime!)
     }
     
     
     @IBAction func StandardC(sender: AnyObject) {
         scrollDates.subviews.forEach({ $0.removeFromSuperview() })
         
-        var buttonClicked = "STANDARD C"
-        var date = accessPlist().get_class("STANDARD C")
+        let buttonClicked = "STANDARD C"
+        let date = accessPlist().get_class("STANDARD C")
+        
+        let coursename = accessPlist().get_class_info("STANDARD C", value: "name")
+        let coursecost = accessPlist().get_class_info("STANDARD C", value: "cost")
+        let coursetime = accessPlist().get_class_info("STANDARD C", value: "time")
         CreateObjects(date!, buttonClicked)
+        changeInfo(coursename!, coursecost!, coursetime!)
     }
     
     

@@ -98,7 +98,6 @@ UITableViewController {
                 
                 cell.accessoryType = .Checkmark
             }
-            
             cell.textLabel?.text = GrabNGoDataSet![indexPath.row] as? String
             return cell
         }

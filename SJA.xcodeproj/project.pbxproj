@@ -12,6 +12,10 @@
 		054853271C66D25600C4F262 /* SJAlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 054853221C66D25600C4F262 /* SJAlogo.png */; };
 		054853281C66D25600C4F262 /* star-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = 054853231C66D25600C4F262 /* star-xxl.png */; };
 		054853291C66D25600C4F262 /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 054853241C66D25600C4F262 /* Triangle.png */; };
+		2BDACC791C66DCC100F1FF3C /* CampingKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDACC751C66DCC100F1FF3C /* CampingKit.swift */; settings = {ASSET_TAGS = (); }; };
+		2BDACC7A1C66DCC100F1FF3C /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDACC761C66DCC100F1FF3C /* CheckBox.swift */; settings = {ASSET_TAGS = (); }; };
+		2BDACC7B1C66DCC100F1FF3C /* Checklists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDACC771C66DCC100F1FF3C /* Checklists.swift */; settings = {ASSET_TAGS = (); }; };
+		2BDACC7C1C66DCC100F1FF3C /* ListContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDACC781C66DCC100F1FF3C /* ListContents.swift */; settings = {ASSET_TAGS = (); }; };
 		A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */; };
 		A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */; };
 		A01FA5AA1C61BF8300BDA36C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A91C61BF8300BDA36C /* InfoViewController.swift */; };
@@ -36,6 +40,10 @@
 		054853221C66D25600C4F262 /* SJAlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SJAlogo.png; sourceTree = "<group>"; };
 		054853231C66D25600C4F262 /* star-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-xxl.png"; sourceTree = "<group>"; };
 		054853241C66D25600C4F262 /* Triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triangle.png; sourceTree = "<group>"; };
+		2BDACC751C66DCC100F1FF3C /* CampingKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampingKit.swift; sourceTree = "<group>"; };
+		2BDACC761C66DCC100F1FF3C /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		2BDACC771C66DCC100F1FF3C /* Checklists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklists.swift; sourceTree = "<group>"; };
+		2BDACC781C66DCC100F1FF3C /* ListContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContents.swift; sourceTree = "<group>"; };
 		A01FA5A21C61BF8300BDA36C /* SJA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +94,10 @@
 		A01FA5A41C61BF8300BDA36C /* SJA */ = {
 			isa = PBXGroup;
 			children = (
+				2BDACC751C66DCC100F1FF3C /* CampingKit.swift */,
+				2BDACC761C66DCC100F1FF3C /* CheckBox.swift */,
+				2BDACC771C66DCC100F1FF3C /* Checklists.swift */,
+				2BDACC781C66DCC100F1FF3C /* ListContents.swift */,
 				054853201C66D25600C4F262 /* Diamond.png */,
 				054853211C66D25600C4F262 /* Flower.png */,
 				054853221C66D25600C4F262 /* SJAlogo.png */,
@@ -194,13 +206,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01FA5BE1C61C1B100BDA36C /* ProfileViewController.swift in Sources */,
+				2BDACC791C66DCC100F1FF3C /* CampingKit.swift in Sources */,
+				2BDACC7B1C66DCC100F1FF3C /* Checklists.swift in Sources */,
 				A01FA5AA1C61BF8300BDA36C /* InfoViewController.swift in Sources */,
 				A0366CE31C66401F005596CC /* accessPlist.swift in Sources */,
+				2BDACC7A1C66DCC100F1FF3C /* CheckBox.swift in Sources */,
 				A01FA5BA1C61C0FC00BDA36C /* ChecklistsViewController.swift in Sources */,
 				A01FA5BC1C61C19100BDA36C /* ClassesViewController.swift in Sources */,
 				A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */,
 				A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */,
 				A01FA5C01C61C40300BDA36C /* StoreViewController.swift in Sources */,
+				2BDACC7C1C66DCC100F1FF3C /* ListContents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJA/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sjamoblie.SJA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -326,7 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJA/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sjamoblie.SJA;
 				PRODUCT_NAME = "$(TARGET_NAME)";

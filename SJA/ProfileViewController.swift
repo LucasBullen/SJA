@@ -131,10 +131,10 @@ class ProfileViewController: UIViewController {
     @IBAction func updateField(sender: AnyObject){
         //When one of the four text objects are updated
         
-        accessPlist().set_userInfo("username", value: "\(self.nameField?.text)")
-        accessPlist().set_userInfo("address", value: "\(self.addressField?.text)")
-        accessPlist().set_userInfo("phone", value: "\(self.phoneField?.text)")
-        accessPlist().set_userInfo("email", value: "\(self.emailField?.text)")
+        accessPlist().set_userInfo("username", value: "\(self.nameField?.text!)")
+        accessPlist().set_userInfo("address", value: "\(self.addressField?.text!)")
+        accessPlist().set_userInfo("phone", value: "\(self.phoneField?.text!)")
+        accessPlist().set_userInfo("email", value: "\(self.emailField?.text!)")
         
         checkRegScore()
     }

@@ -8,9 +8,8 @@
 
 import UIKit
 
-class ChecklistViewController: UIViewController {
+/*class ChecklistViewController: UIViewController {
     
-    /*
     @IBOutlet weak var grabNGo : UIButton!
     @IBOutlet weak var vehicle : UIButton!
     @IBOutlet weak var work : UIButton!
@@ -61,6 +60,6 @@ class ChecklistViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    */
     
 }
+*/

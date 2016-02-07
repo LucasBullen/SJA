@@ -11,6 +11,7 @@
 		108FC28B1C66AD9400A17401 /* star-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = 108FC28A1C66AD9400A17401 /* star-xxl.png */; };
 		108FC28D1C66AECA00A17401 /* Flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 108FC28C1C66AECA00A17401 /* Flower.png */; };
 		108FC28F1C66B73000A17401 /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 108FC28E1C66B73000A17401 /* Triangle.png */; };
+		108FC29D1C66CBC700A17401 /* SJAlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 108FC29C1C66CBC700A17401 /* SJAlogo.png */; };
 		A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */; };
 		A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */; };
 		A01FA5AA1C61BF8300BDA36C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A91C61BF8300BDA36C /* InfoViewController.swift */; };
@@ -34,6 +35,7 @@
 		108FC28A1C66AD9400A17401 /* star-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-xxl.png"; path = "../../star-xxl.png"; sourceTree = "<group>"; };
 		108FC28C1C66AECA00A17401 /* Flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Flower.png; path = ../../Flower.png; sourceTree = "<group>"; };
 		108FC28E1C66B73000A17401 /* Triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Triangle.png; path = ../../Triangle.png; sourceTree = "<group>"; };
+		108FC29C1C66CBC700A17401 /* SJAlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SJAlogo.png; path = ../../SJAlogo.png; sourceTree = "<group>"; };
 		A01FA5A21C61BF8300BDA36C /* SJA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		A01FA5A41C61BF8300BDA36C /* SJA */ = {
 			isa = PBXGroup;
 			children = (
+				108FC29C1C66CBC700A17401 /* SJAlogo.png */,
 				108FC28E1C66B73000A17401 /* Triangle.png */,
 				108FC28C1C66AECA00A17401 /* Flower.png */,
 				108FC28A1C66AD9400A17401 /* star-xxl.png */,
@@ -170,6 +173,7 @@
 				A0366CE11C663F4E005596CC /* profile.plist in Resources */,
 				108FC28F1C66B73000A17401 /* Triangle.png in Resources */,
 				A01FA5B21C61BF8300BDA36C /* LaunchScreen.storyboard in Resources */,
+				108FC29D1C66CBC700A17401 /* SJAlogo.png in Resources */,
 				A01FA5AF1C61BF8300BDA36C /* Assets.xcassets in Resources */,
 				108FC2831C66AB8500A17401 /* Diamond.png in Resources */,
 				A01FA5AD1C61BF8300BDA36C /* Main.storyboard in Resources */,

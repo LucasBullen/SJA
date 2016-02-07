@@ -48,7 +48,7 @@ class ProfileViewController: UIViewController {
         let date = dateFormatter.stringFromDate(currentDate)
         self.date.text = date
         
-        checkRegScore()
+        //checkRegScore()
         
         // Individual scorings within each category
         self.regScore.text = (accessPlist().get_userInfo("regScore")! + "/"
@@ -110,33 +110,27 @@ class ProfileViewController: UIViewController {
         self.safetyPrompt.text = flavour
     }
     
-    func checkRegScore(){
-        var reggaeScore = 0;
-        
-        if ((self.nameField.text?.utf16.count) > 1){
-            reggaeScore++
-        }
-        if ((self.addressField.text?.utf16.count) > 6){
-            reggaeScore++
-        }
-        if ((self.phoneField.text?.utf16.count) > 6){
-            reggaeScore++
-        }
-        if ((self.emailField.text?.utf16.count) > 5){
-            reggaeScore++
-        }
-        accessPlist().set_userInfo("regScore", value: "\(reggaeScore)")
-    }
-    
     @IBAction func updateField(sender: AnyObject){
     //When one of the four text objects are updated
+        var reggaeScore = 1;
+        
+        self.nameField.text = accessPlist().get_userInfo("username")
+        self.addressField.text = accessPlist().get_userInfo("address")
+        self.phoneField.text = accessPlist().get_userInfo("phone")
+        self.emailField.text = accessPlist().get_userInfo("email")
+        
+        accessPlist().set_userInfo("username", value: "\(self.nameField.text)")
+        
+        //if (self.nameField.text!.count > 6){
+        
+        //}
         
         accessPlist().set_userInfo("username", value: "\(self.nameField?.text)")
         accessPlist().set_userInfo("address", value: "\(self.addressField?.text)")
         accessPlist().set_userInfo("phone", value: "\(self.phoneField?.text)")
         accessPlist().set_userInfo("email", value: "\(self.emailField?.text)")
 
-        checkRegScore()
+        //checkRegScore()
     }
     
     override func viewDidLoad() {

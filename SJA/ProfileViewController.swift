@@ -48,7 +48,7 @@ class ProfileViewController: UIViewController {
         let date = dateFormatter.stringFromDate(currentDate)
         self.date.text = date
         
-        checkRegScore()
+        //checkRegScore()
         
         // Individual scorings within each category
         self.regScore.text = (accessPlist().get_userInfo("regScore")! + "/"
@@ -130,7 +130,7 @@ class ProfileViewController: UIViewController {
         accessPlist().set_userInfo("phone", value: "\(self.phoneField?.text)")
         accessPlist().set_userInfo("email", value: "\(self.emailField?.text)")
 
-        checkRegScore()
+        //checkRegScore()
     }
     
     override func viewDidLoad() {

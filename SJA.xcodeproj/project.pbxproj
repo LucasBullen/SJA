@@ -99,6 +99,10 @@
 				A01FA5BD1C61C1B100BDA36C /* ProfileViewController.swift */,
 				A01FA5BF1C61C40300BDA36C /* StoreViewController.swift */,
 				A01FA5AB1C61BF8300BDA36C /* Main.storyboard */,
+				26B91C5E1C6672E800F505A3 /* Checklists.swift */,
+				26B91C561C6664AC00F505A3 /* ListContents.swift */,
+				26B91C581C6664B900F505A3 /* PlacesTableViewCell.swift */,
+				26B91C5A1C6664C200F505A3 /* CheckBox.swift */,
 				A01FA5AE1C61BF8300BDA36C /* Assets.xcassets */,
 				A01FA5B01C61BF8300BDA36C /* LaunchScreen.storyboard */,
 				A01FA5B31C61BF8300BDA36C /* Info.plist */,
@@ -170,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B91C621C669C7B00F505A3 /* not.png in Resources */,
 				A0366CE11C663F4E005596CC /* profile.plist in Resources */,
 				108FC28F1C66B73000A17401 /* Triangle.png in Resources */,
 				A01FA5B21C61BF8300BDA36C /* LaunchScreen.storyboard in Resources */,
@@ -193,13 +198,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B91C5B1C6664C200F505A3 /* CheckBox.swift in Sources */,
 				A01FA5BE1C61C1B100BDA36C /* ProfileViewController.swift in Sources */,
 				A01FA5AA1C61BF8300BDA36C /* InfoViewController.swift in Sources */,
 				A0366CE31C66401F005596CC /* accessPlist.swift in Sources */,
 				A01FA5BA1C61C0FC00BDA36C /* ChecklistsViewController.swift in Sources */,
+				26B91C5F1C6672E800F505A3 /* Checklists.swift in Sources */,
 				A01FA5BC1C61C19100BDA36C /* ClassesViewController.swift in Sources */,
+				26B91C571C6664AC00F505A3 /* ListContents.swift in Sources */,
 				A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */,
+				26B91C591C6664B900F505A3 /* PlacesTableViewCell.swift in Sources */,
 				A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */,
+				2B60DCEC1C66AA7500BFD2B4 /* Score.swift in Sources */,
 				A01FA5C01C61C40300BDA36C /* StoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sjamoblie.SJA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -325,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.sjamoblie.SJA;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -126,9 +126,9 @@ class ProfileViewController: UIViewController {
         
         accessPlist().set_userInfo("username", value: "\(self.nameField.text)")
         
-        if (self.nameField.text!.count > 6){
+        //if (self.nameField.text!.count > 6){
         
-        }
+        //}
         
     }
     

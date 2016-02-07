@@ -82,17 +82,17 @@ class accessPlist {
         }
         return nil
     }
-    func get_quiz_progress()->Int?{
+    func get_quiz_progress()->NSString?{
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
         let path = documentsDirectory.stringByAppendingPathComponent("quizzes.plist")
         if let dict = NSMutableDictionary(contentsOfFile: path){
-            return dict.objectForKey("progress") as? Int
+            return dict.objectForKey("progress") as? NSString
         }else{
             if let privPath = NSBundle.mainBundle().pathForResource("quizzes", ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     if let event_info = dict.objectForKey("progress"){
-                        return event_info as? Int
+                        return event_info as? NSString
                     }else{
                         print("error_read_2")
                     }

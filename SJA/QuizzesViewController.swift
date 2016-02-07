@@ -23,7 +23,8 @@ class QuizzesViewController: UIViewController {
     
     @IBOutlet weak var response: UILabel!
     @IBOutlet weak var next: UIButton!
-    let progress: Int = Int(accessPlist().get_quiz_progress()!)
+    var progress: NSString = accessPlist().get_quiz_progress()!
+    var questionInfo =  NSDictionary()
     override func viewDidLoad() {
         loadQ()
         super.viewDidLoad()
@@ -32,21 +33,42 @@ class QuizzesViewController: UIViewController {
     }
     
     func loadQ(){
-        let questionInfo: NSDictionary = accessPlist().get_quiz_question("\(progress)")!
-        print("prog:\(progress)")
+        if (Int(progress as String) > 10){
+            progress = "1"
+        }
+        questionInfo = accessPlist().get_quiz_question("\(progress)")!
+        print("prog:\(questionInfo)")
         question.text = questionInfo.objectForKey("question")! as? String
         answerOne.text = questionInfo.objectForKey("answers")![0] as? String
         answerTwo.text = questionInfo.objectForKey("answers")![1] as? String
         answerThree.text = questionInfo.objectForKey("answers")![2] as? String
         answerFour.text = questionInfo.objectForKey("answers")![3] as? String
+        answerButtonOne.enabled = true
+        answerButtonTwo.enabled = true
+        answerButtonThree.enabled = true
+        answerButtonFour.enabled = true
+    }
+    
+    @IBAction func next(sender: AnyObject) {
+        loadQ()
     }
     
     @IBAction func checkAnswer(sender: AnyObject) {
-        let questionInfo: NSDictionary = accessPlist().get_quiz_question("\(progress)")!
-        accessPlist().set_quiz_progress("\(progress)")
-        //if (sender.tag == questionInfo.objectForKey("right")){
-            
-        //}
+        if (Int(progress as String) > 10){
+            progress = "1"
+        }
+        accessPlist().set_quiz_progress("\(Int(progress as String)! + 1)")
+        print("tag\(sender.tag) and:\(questionInfo) progress: \(progress)")
+        if ("\(sender.tag)" == questionInfo.objectForKey("right") as! String){
+            response.text = "You did it!!! :D"
+        }else{
+            response.text = "You fail."
+        }
+        answerButtonOne.enabled = false
+        answerButtonTwo.enabled = false
+        answerButtonThree.enabled = false
+        answerButtonFour.enabled = false
+        progress = accessPlist().get_quiz_progress()!
     }
     
     override func didReceiveMemoryWarning() {

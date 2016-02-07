@@ -9,11 +9,11 @@
 	<key>phone</key>
 	<string>123-456</string>
 	<key>quizScore</key>
-	<string>0</string>
+	<string>8</string>
 	<key>quizScoreMax</key>
 	<string>15</string>
 	<key>infoScore</key>
-	<string>0</string>
+	<string>32</string>
 	<key>infoScoreMax</key>
 	<string>40</string>
 	<key>username</key>

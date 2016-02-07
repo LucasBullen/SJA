@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -747,6 +747,20 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="Diamond.png" id="uEW-7A-pCQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addressField" destination="U9Q-Wo-z0e" id="Fke-Zm-GYJ"/>
+                        <outlet property="date" destination="7Gq-uu-S5N" id="k4R-gp-NKS"/>
+                        <outlet property="emailField" destination="LUi-Yy-2TX" id="64j-5t-qHv"/>
+                        <outlet property="infoScore" destination="bKH-ed-LA3" id="Ev8-2O-oFZ"/>
+                        <outlet property="name" destination="PIo-ca-daV" id="8Xp-BK-bes"/>
+                        <outlet property="nameField" destination="QNH-YC-3Vm" id="mb1-Hu-Ref"/>
+                        <outlet property="phoneField" destination="2PW-xA-0D0" id="LQp-vS-J3z"/>
+                        <outlet property="quizScore" destination="rdu-IG-P85" id="5by-nK-l8W"/>
+                        <outlet property="regScore" destination="w0n-OW-a35" id="09Z-Ix-KpS"/>
+                        <outlet property="report" destination="HoC-dk-LWc" id="TLC-6f-1uT"/>
+                        <outlet property="safetyGrade" destination="SLe-Ec-cgl" id="jVf-iy-G0i"/>
+                        <outlet property="safetyPrompt" destination="Iuw-VG-TOI" id="SlE-wJ-G0K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVO-fA-znq" sceneMemberID="firstResponder"/>
             </objects>
@@ -805,7 +819,7 @@
                                 <state key="normal" title="Buy"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFn-my-CY7">
-                                <rect key="frame" x="476" y="174" width="104" height="35.5"/>
+                                <rect key="frame" x="476" y="174" width="104" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="lpk-f6-Pyw"/>
                                 </constraints>
@@ -821,13 +835,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="247" text="Home/Play Kit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg1-2V-LBR">
-                                <rect key="frame" x="20" y="155" width="448" height="18.5"/>
+                                <rect key="frame" x="20" y="155" width="448" height="19"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Body Fluid Clean-up Kit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SL-eJ-xpl">
-                                <rect key="frame" x="20" y="129" width="448" height="18.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Body Fluid Clean-up Kit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SL-eJ-xpl">
+                                <rect key="frame" x="20" y="129" width="448" height="19"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -842,7 +856,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1t-h9-RNB">
-                                <rect key="frame" x="20" y="406" width="560" height="19.5"/>
+                                <rect key="frame" x="20" y="406" width="560" height="20"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1000,6 +1014,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Diamond.png" width="36" height="36"/>
+        <image name="Flower.png" width="37" height="33"/>
+        <image name="Triangle.png" width="30" height="27"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="star-xxl.png" width="32" height="32"/>

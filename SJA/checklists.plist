@@ -6,88 +6,88 @@
 	<array>
 		<false/>
 		<false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
 	</array>
 	<key>GrabNGoDataState</key>
 	<array>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
 	</array>
 	<key>CampingDataState</key>
 	<array>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-        <false/>
-    </array>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+	</array>
 	<key>WorkDataState</key>
 	<array>
 		<false/>
@@ -156,7 +156,7 @@
 		<string>Eating utensils</string>
 		<string>Paper towels and cleaning kit</string>
 		<string>Sturdy bucket</string>
-		<string></string>
+		<string>Bug Spray and Sunscreen</string>
 		<string>Child&apos;s toilet seat</string>
 		<string>Large garbage bags</string>
 		<string>Cat litter</string>

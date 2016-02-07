@@ -12,9 +12,7 @@ import UIKit
 class ListContentsTableViewController :
 UITableViewController {
     
-    
-    var checked = [Bool]()
-    
+    var checked = NSMutableArray()
     var listNumber = -1
     
 
@@ -32,6 +30,7 @@ UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
+        print("GrabNGoDataSet:\(GrabNGoDataSet)")
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             if cell.accessoryType == .Checkmark
             {
@@ -42,17 +41,25 @@ UITableViewController {
             {
                 cell.accessoryType = .Checkmark
                 if listNumber == 1{
-                    checked = gngChecked
-                    gngChecked[indexPath.row] = true }
+                    gngChecked![indexPath.row] = true
+                    accessPlist().set_list_state("GrabNGoDataState", value: gngChecked!)
+                    //Score.update ("info",value : 1)
+                }
                 if listNumber == 2{
-                    checked = vehicleChecked
-                    vehicleChecked[indexPath.row] = true }
+                    vehicleChecked![indexPath.row] = true
+                    accessPlist().set_list_state("VehicleDataState", value: vehicleChecked!)
+                    //Score.update ("info",value : 1)
+                }
                 if listNumber == 3{
-                    checked = workChecked
-                    workChecked[indexPath.row] = true }
+                    workChecked![indexPath.row] = true
+                    accessPlist().set_list_state("WorkDataState", value: workChecked!)
+                    //Score.update ("info",value : 1)
+                }
                 if listNumber == 4{
-                    checked = campChecked
-                    campChecked[indexPath.row] = true }
+                    campChecked![indexPath.row] = true
+                    accessPlist().set_list_state("CampingDataStructure", value: campChecked!)
+                    //Score.update ("info",value : 1)
+                }
                 
             }
         }
@@ -65,49 +72,79 @@ UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             if listNumber == 1{
-                return GrabNGoDataSet.count
+                return GrabNGoDataSet!.count
             }
             if listNumber == 2{
-                return VehicleDataSet.count
+                return VehicleDataSet!.count
             }
             if listNumber == 3{
-                return WorkDataSet.count
+                return WorkDataSet!.count
             }
             if listNumber == 4{
-                return CampingDataSet.count
+                return CampingDataSet!.count
             }
-        return VehicleDataSet.count
+        return VehicleDataSet!.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Basic")!
-        if checked[indexPath.row] == false {
-            
-            cell.accessoryType = .None
-        }
-        else if checked[indexPath.row] == true {
-            
-            cell.accessoryType = .Checkmark
-            //Score.update ("info",value : 1)
-        }
         if listNumber == 1{
-            cell.frame.origin.x += 1000
-            cell.textLabel?.text = GrabNGoDataSet[indexPath.row]
+            
+            if gngChecked![indexPath.row] as! Bool == false {
+                
+                cell.accessoryType = .None
+            }
+            else if gngChecked![indexPath.row] as! NSObject == true {
+                
+                cell.accessoryType = .Checkmark
+            }
+            
+            cell.textLabel?.text = GrabNGoDataSet![indexPath.row] as? String
             return cell
         }
         if listNumber == 2{
-            cell.frame.origin.x += 1000
-            cell.textLabel?.text = VehicleDataSet[indexPath.row]
+            
+            if vehicleChecked![indexPath.row] as! Bool == false {
+                
+                cell.accessoryType = .None
+            }
+            else if vehicleChecked![indexPath.row] as! NSObject == true {
+                
+                cell.accessoryType = .Checkmark
+                //Score.update ("info",value : 1)
+            }
+            
+            cell.textLabel?.text = VehicleDataSet![indexPath.row] as? String
             return cell
         }
         if listNumber == 3{
-            cell.frame.origin.x += 1000
-            cell.textLabel?.text = WorkDataSet[indexPath.row]
+            
+            if workChecked![indexPath.row] as! Bool == false {
+                
+                cell.accessoryType = .None
+            }
+            else if workChecked![indexPath.row] as! NSObject == true {
+                
+                cell.accessoryType = .Checkmark
+                //Score.update ("info",value : 1)
+            }
+            
+            cell.textLabel?.text = WorkDataSet![indexPath.row] as? String
             return cell
         }
         if listNumber == 4{
-            cell.frame.origin.x += 1000
-            cell.textLabel?.text = CampingDataSet[indexPath.row]
+            
+            if campChecked![indexPath.row] as! Bool == false {
+                
+                cell.accessoryType = .None
+            }
+            else if campChecked![indexPath.row] as! NSObject == true {
+                
+                cell.accessoryType = .Checkmark
+                //Score.update ("info",value : 1)
+            }
+            
+            cell.textLabel?.text = CampingDataSet![indexPath.row] as? String
             return cell
         }
         return cell

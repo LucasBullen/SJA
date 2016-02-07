@@ -11,7 +11,6 @@ import UIKit
 
 class ChecklistTableViewController :
 UITableViewController {
-    
     let kitsDataSet =
     ["'Grab-N-Go' Kit for Home", "Vehicle Kit for Your Car", "Survival Kit for Work", "Camping Kit"]
     

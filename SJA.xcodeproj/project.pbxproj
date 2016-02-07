@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26B91C571C6664AC00F505A3 /* ListContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B91C561C6664AC00F505A3 /* ListContents.swift */; };
-		26B91C591C6664B900F505A3 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B91C581C6664B900F505A3 /* PlacesTableViewCell.swift */; };
-		26B91C5B1C6664C200F505A3 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B91C5A1C6664C200F505A3 /* CheckBox.swift */; };
-		26B91C5F1C6672E800F505A3 /* Checklists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B91C5E1C6672E800F505A3 /* Checklists.swift */; };
-		26B91C621C669C7B00F505A3 /* not.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B91C601C669C7B00F505A3 /* not.png */; };
-		26B91C631C669C7B00F505A3 /* fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B91C611C669C7B00F505A3 /* fill.png */; };
+		054853251C66D25600C4F262 /* Diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 054853201C66D25600C4F262 /* Diamond.png */; };
+		054853261C66D25600C4F262 /* Flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 054853211C66D25600C4F262 /* Flower.png */; };
+		054853271C66D25600C4F262 /* SJAlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 054853221C66D25600C4F262 /* SJAlogo.png */; };
+		054853281C66D25600C4F262 /* star-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = 054853231C66D25600C4F262 /* star-xxl.png */; };
+		054853291C66D25600C4F262 /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 054853241C66D25600C4F262 /* Triangle.png */; };
 		A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */; };
 		A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */; };
 		A01FA5AA1C61BF8300BDA36C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FA5A91C61BF8300BDA36C /* InfoViewController.swift */; };
@@ -32,12 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26B91C561C6664AC00F505A3 /* ListContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContents.swift; sourceTree = "<group>"; };
-		26B91C581C6664B900F505A3 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
-		26B91C5A1C6664C200F505A3 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
-		26B91C5E1C6672E800F505A3 /* Checklists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklists.swift; sourceTree = "<group>"; };
-		26B91C601C669C7B00F505A3 /* not.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = not.png; sourceTree = "<group>"; };
-		26B91C611C669C7B00F505A3 /* fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fill.png; sourceTree = "<group>"; };
+		054853201C66D25600C4F262 /* Diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diamond.png; sourceTree = "<group>"; };
+		054853211C66D25600C4F262 /* Flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower.png; sourceTree = "<group>"; };
+		054853221C66D25600C4F262 /* SJAlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SJAlogo.png; sourceTree = "<group>"; };
+		054853231C66D25600C4F262 /* star-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-xxl.png"; sourceTree = "<group>"; };
+		054853241C66D25600C4F262 /* Triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triangle.png; sourceTree = "<group>"; };
 		A01FA5A21C61BF8300BDA36C /* SJA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesViewController.swift; sourceTree = "<group>"; };
@@ -88,8 +86,11 @@
 		A01FA5A41C61BF8300BDA36C /* SJA */ = {
 			isa = PBXGroup;
 			children = (
-				26B91C601C669C7B00F505A3 /* not.png */,
-				26B91C611C669C7B00F505A3 /* fill.png */,
+				054853201C66D25600C4F262 /* Diamond.png */,
+				054853211C66D25600C4F262 /* Flower.png */,
+				054853221C66D25600C4F262 /* SJAlogo.png */,
+				054853231C66D25600C4F262 /* star-xxl.png */,
+				054853241C66D25600C4F262 /* Triangle.png */,
 				A01FA5A51C61BF8300BDA36C /* AppDelegate.swift */,
 				A01FA5B91C61C0FC00BDA36C /* ChecklistsViewController.swift */,
 				A01FA5A71C61BF8300BDA36C /* QuizzesViewController.swift */,
@@ -98,10 +99,6 @@
 				A01FA5BD1C61C1B100BDA36C /* ProfileViewController.swift */,
 				A01FA5BF1C61C40300BDA36C /* StoreViewController.swift */,
 				A01FA5AB1C61BF8300BDA36C /* Main.storyboard */,
-				26B91C5E1C6672E800F505A3 /* Checklists.swift */,
-				26B91C561C6664AC00F505A3 /* ListContents.swift */,
-				26B91C581C6664B900F505A3 /* PlacesTableViewCell.swift */,
-				26B91C5A1C6664C200F505A3 /* CheckBox.swift */,
 				A01FA5AE1C61BF8300BDA36C /* Assets.xcassets */,
 				A01FA5B01C61BF8300BDA36C /* LaunchScreen.storyboard */,
 				A01FA5B31C61BF8300BDA36C /* Info.plist */,
@@ -173,15 +170,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B91C621C669C7B00F505A3 /* not.png in Resources */,
 				A0366CE11C663F4E005596CC /* profile.plist in Resources */,
 				A01FA5B21C61BF8300BDA36C /* LaunchScreen.storyboard in Resources */,
 				A01FA5AF1C61BF8300BDA36C /* Assets.xcassets in Resources */,
+				054853251C66D25600C4F262 /* Diamond.png in Resources */,
 				A01FA5AD1C61BF8300BDA36C /* Main.storyboard in Resources */,
 				A0366CDF1C663F43005596CC /* store.plist in Resources */,
-				26B91C631C669C7B00F505A3 /* fill.png in Resources */,
+				054853281C66D25600C4F262 /* star-xxl.png in Resources */,
+				054853271C66D25600C4F262 /* SJAlogo.png in Resources */,
+				054853261C66D25600C4F262 /* Flower.png in Resources */,
 				A0366CDD1C663F2E005596CC /* classes.plist in Resources */,
 				A0366CDB1C663F1D005596CC /* quizzes.plist in Resources */,
+				054853291C66D25600C4F262 /* Triangle.png in Resources */,
 				A0366CD91C663EFD005596CC /* checklists.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,18 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B91C5B1C6664C200F505A3 /* CheckBox.swift in Sources */,
 				A01FA5BE1C61C1B100BDA36C /* ProfileViewController.swift in Sources */,
 				A01FA5AA1C61BF8300BDA36C /* InfoViewController.swift in Sources */,
 				A0366CE31C66401F005596CC /* accessPlist.swift in Sources */,
 				A01FA5BA1C61C0FC00BDA36C /* ChecklistsViewController.swift in Sources */,
-				26B91C5F1C6672E800F505A3 /* Checklists.swift in Sources */,
 				A01FA5BC1C61C19100BDA36C /* ClassesViewController.swift in Sources */,
-				26B91C571C6664AC00F505A3 /* ListContents.swift in Sources */,
 				A01FA5A61C61BF8300BDA36C /* AppDelegate.swift in Sources */,
-				26B91C591C6664B900F505A3 /* PlacesTableViewCell.swift in Sources */,
 				A01FA5A81C61BF8300BDA36C /* QuizzesViewController.swift in Sources */,
-				2B60DCEC1C66AA7500BFD2B4 /* Score.swift in Sources */,
 				A01FA5C01C61C40300BDA36C /* StoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

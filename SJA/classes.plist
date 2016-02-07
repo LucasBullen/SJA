@@ -2,10 +2,105 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>test</key>
-	<array>
-		<string>tesete</string>
-		<string>tdftdd</string>
-	</array>
+	<key>Courses</key>
+	<dict>
+		<key>STANDARD A</key>
+		<dict>
+			<key>name</key>
+			<string>Standard First Aid with CPR A + AED</string>
+			<key>cost</key>
+			<string>$135.00</string>
+			<key>time</key>
+			<string>8:00am - 4:00pm (two days)</string>
+			<key>date</key>
+			<array>
+				<string>5/01/2016 - 6/01/2016</string>
+				<string>27/01/2016 - 28/01/2016</string>
+				<string>4/02/2016 - 5/02/2016</string>
+				<string>22/02/2016 - 23/02/2016</string>
+				<string>14/03/2016 - 15/03/2016</string>
+				<string>23/03/2016 - 24/03/2016</string>
+				<string>4/04/2016 - 5/04/2016</string>
+				<string>21/04/2016 - 22/04/2016</string>
+				<string>12/05/2016 - 13/05/2016</string>
+				<string>24/05/2016 - 25/05/2016</string>
+				<string>30/05/2016 - 31/05/2016</string>
+				<string>8/06/2016 - 9/06/2016</string>
+				<string>23/06/2016 - 24/06/2016</string>
+			</array>
+		</dict>
+		<key>EMRG A</key>
+		<dict>
+			<key>name</key>
+			<string>Emergency First Aid with CPR A + AED</string>
+			<key>cost</key>
+			<string>$95.00</string>
+			<key>time</key>
+			<string>8:00am - 4:00pm (one day)</string>
+			<key>date</key>
+			<array>
+				<string>12/01/2016</string>
+				<string>16/01/2016</string>
+				<string>29/01/2016</string>
+				<string>13/02/2016</string>
+				<string>16/02/2016</string>
+				<string>26/02/2016</string>
+				<string>5/03/2016</string>
+				<string>11/03/2016</string>
+				<string>21/03/2016</string>
+				<string>9/04/2016</string>
+				<string>15/04/2016</string>
+				<string>25/04/2016</string>
+				<string>7/05/2016</string>
+				<string>17/05/2016</string>
+				<string>26/05/2016</string>
+				<string>10/06/2016</string>
+				<string>25/06/2016</string>
+				<string>27/06/2016</string>
+			</array>
+		</dict>
+		<key>STANDARD C</key>
+		<dict>
+			<key>name</key>
+			<string>Standard First Aid with CPR C + AED</string>
+			<key>cost</key>
+			<string>$145.00</string>
+			<key>time</key>
+			<string>8:00am - 4:30pm (two days)</string>
+			<key>date</key>
+			<array>
+				<string>9/01/2016 - 10/01/2016</string>
+				<string>14/01/2016 - 15/01/2016</string>
+				<string>18/01/2016 - 19/01/2016</string>
+				<string>23/01/2016 - 24/01/2016</string>
+				<string>6/02/2016 - 7/02/2016</string>
+				<string>8/02/2016 - 9/02/2016</string>
+				<string>17/02/2016 - 18/02/2016</string>
+				<string>27/02/2016 - 28/02/2016</string>
+				<string>7/03/2016 - 8/03/2016</string>
+				<string>12/03/2016 - 13/03/2016</string>
+				<string>19/03/2016 - 20/03/2016</string>
+				<string>30/03/2016 - 31/03/2016</string>
+				<string>2/04/2016 - 3/04/2016</string>
+				<string>6/04/2016 - 7/04/2016</string>
+				<string>11/04/2016 - 12/04/2016</string>
+				<string>16/04/2016 - 17/04/2016</string>
+				<string>19/04/2016 - 20/04/2016</string>
+				<string>30/04/2016 - 1/05/2016</string>
+				<string>2/05/2016 - 3/05/2016</string>
+				<string>10/05/2016 - 11/05/2016</string>
+				<string>14/05/2016 - 15/05/2016</string>
+				<string>18/05/2016 - 19/05/2016</string>
+				<string>2/06/2016 - 3/06/2016</string>
+				<string>4/06/2016 - 5/06/2016</string>
+				<string>13/06/2016 - 14/06/2016</string>
+				<string>18/06/2016 - 19/06/2016</string>
+				<string>20/06/2016 - 21/06/2016</string>
+				<string>28/06/2016 - 29/06/2016</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Refresher Courses</key>
+	<dict/>
 </dict>
 </plist>

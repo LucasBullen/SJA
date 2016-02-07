@@ -8,16 +8,7 @@
 
 import UIKit
 
-var safetyScore:Double = Double()
-var user:ProfileViewController?
-
 class ProfileViewController: UIViewController {
-    /*
-    Pseudo Nonsence
-    Create the main page, setting the background colour to a nice pale
-    Pull the username, the date, and the score
-    
-    */
     
     @IBOutlet weak var report: UILabel!
     
@@ -41,10 +32,8 @@ class ProfileViewController: UIViewController {
     
     func loadInfo(){
         
-        
         // Setting up label titles
         self.report.text = "St. John Ambulance: Report Card"
-        self.name.text = accessPlist().get_userInfo("title")!
         
         // Load user info from the dictionary
         self.nameField.text = accessPlist().get_userInfo("username")!
@@ -59,10 +48,15 @@ class ProfileViewController: UIViewController {
         let date = dateFormatter.stringFromDate(currentDate)
         self.date.text = date
         
+        checkRegScore()
+        
         // Individual scorings within each category
-        self.regScore.text = ("Registration Score: " + accessPlist().get_userInfo("regScore")!)
-        self.regScore.text = ("Quiz Score: " + accessPlist().get_userInfo("quizScore")!)
-        self.regScore.text = ("Info Score: " + accessPlist().get_userInfo("infoScore")!)
+        self.regScore.text = (accessPlist().get_userInfo("regScore")! + "/"
+            + accessPlist().get_userInfo("regScoreMax")!)
+        self.quizScore.text = (accessPlist().get_userInfo("quizScore")! + "/"
+            + accessPlist().get_userInfo("quizScoreMax")!)
+        self.infoScore.text = (accessPlist().get_userInfo("infoScore")! + "/"
+            + accessPlist().get_userInfo("infoScoreMax")!)
         
         // Calculate the total safety score
         let totalScore = Double(accessPlist().get_userInfo("regScore")!)!
@@ -111,32 +105,45 @@ class ProfileViewController: UIViewController {
             accessPlist().set_userInfo("title", value:"Safety Champion")
         }
         // Setting new grades and flavour text
+        self.name.text = accessPlist().get_userInfo("title")!
         self.safetyGrade.text = grade
         self.safetyPrompt.text = flavour
     }
     
+    func checkRegScore(){
+        var reggaeScore = 0;
+        
+        if ((self.nameField.text?.utf16.count) > 1){
+            reggaeScore++
+        }
+        if ((self.addressField.text?.utf16.count) > 6){
+            reggaeScore++
+        }
+        if ((self.phoneField.text?.utf16.count) > 6){
+            reggaeScore++
+        }
+        if ((self.emailField.text?.utf16.count) > 5){
+            reggaeScore++
+        }
+        accessPlist().set_userInfo("regScore", value: "\(reggaeScore)")
+    }
+    
     @IBAction func updateField(sender: AnyObject){
     //When one of the four text objects are updated
-        var reggaeScore = 1;
         
-        self.nameField.text = accessPlist().get_userInfo("username")
-        self.addressField.text = accessPlist().get_userInfo("address")
-        self.phoneField.text = accessPlist().get_userInfo("phone")
-        self.emailField.text = accessPlist().get_userInfo("email")
-        
-        accessPlist().set_userInfo("username", value: "\(self.nameField.text)")
-        
-        if (self.nameField.text!.count > 6){
-        
-        }
-        
+        accessPlist().set_userInfo("username", value: "\(self.nameField?.text)")
+        accessPlist().set_userInfo("address", value: "\(self.addressField?.text)")
+        accessPlist().set_userInfo("phone", value: "\(self.phoneField?.text)")
+        accessPlist().set_userInfo("email", value: "\(self.emailField?.text)")
+
+        checkRegScore()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadInfo()
-        self.view.backgroundColor = UIColor.grayColor()
+        self.view.backgroundColor = UIColor.whiteColor()
     }
     
     override func didReceiveMemoryWarning() {

@@ -18,7 +18,7 @@ class accessPlist {
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
         let path = documentsDirectory.stringByAppendingPathComponent("profile.plist")
         if let dict = NSMutableDictionary(contentsOfFile: path){
-            return dict.objectForKey("event_info") as? String
+            return dict.objectForKey(id) as? String
         }else{
             if let privPath = NSBundle.mainBundle().pathForResource("profile", ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){

@@ -128,17 +128,19 @@ class accessPlist {
         }
         return nil
     }
-    func get_lists_set(id: String)->NSArray?{
+    func get_lists_set(id: String)->NSMutableArray?{
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
         let path = documentsDirectory.stringByAppendingPathComponent("checklists.plist")
         if let dict = NSMutableDictionary(contentsOfFile: path){
-            return dict.objectForKey(id) as? NSArray
+            print("Testssetsetstsets:\(dict.objectForKey(id))")
+            return dict.objectForKey(id) as? NSMutableArray
         }else{
             if let privPath = NSBundle.mainBundle().pathForResource("checklists", ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     if let event_info = dict.objectForKey(id){
-                        return event_info as? NSArray
+                        print("Testssetsetstsets:\(dict.objectForKey(id))")
+                        return event_info as? NSMutableArray
                     }else{
                         print("error_read_2")
                     }
@@ -151,17 +153,17 @@ class accessPlist {
         }
         return nil
     }
-    func get_lists_state(id: String)->NSArray?{
+    func get_lists_state(id: String)->NSMutableArray?{
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
         let path = documentsDirectory.stringByAppendingPathComponent("checklists.plist")
         if let dict = NSMutableDictionary(contentsOfFile: path){
-            return dict.objectForKey(id) as? NSArray
+            return dict.objectForKey(id) as? NSMutableArray
         }else{
             if let privPath = NSBundle.mainBundle().pathForResource("checklists", ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     if let event_info = dict.objectForKey(id){
-                        return event_info as? NSArray
+                        return event_info as? NSMutableArray
                     }else{
                         print("error_read_2")
                     }
@@ -236,7 +238,7 @@ class accessPlist {
             }
         }
     }
-    func set_list_state(id: String, value:String) {
+    func set_list_state(id: String, value:NSMutableArray) {
         
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString

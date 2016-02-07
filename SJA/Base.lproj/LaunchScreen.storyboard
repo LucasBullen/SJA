@@ -10,13 +10,24 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="xsQ-fb-HHH"/>
+                        <viewControllerLayoutGuide type="bottom" id="htq-wg-mvu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="q0d-q4-egR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SJAlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="fDC-kf-hMr">
+                                <rect key="frame" x="25" y="25" width="550" height="570"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fDC-kf-hMr" firstAttribute="leading" secondItem="q0d-q4-egR" secondAttribute="leadingMargin" constant="5" id="FFV-iE-i6J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fDC-kf-hMr" secondAttribute="trailing" constant="5" id="Lbw-gC-ljh"/>
+                            <constraint firstItem="htq-wg-mvu" firstAttribute="top" secondItem="fDC-kf-hMr" secondAttribute="bottom" constant="5" id="QlM-WC-f3D"/>
+                            <constraint firstItem="fDC-kf-hMr" firstAttribute="top" secondItem="xsQ-fb-HHH" secondAttribute="bottom" constant="5" id="d49-46-wB2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +35,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SJAlogo.png" width="350" height="89"/>
+    </resources>
 </document>

@@ -105,7 +105,7 @@ class accessPlist {
         }
         return nil
     }
-    func get_quiz_question(id: Int)->NSDictionary?{
+    func get_quiz_question(id: String)->NSDictionary?{
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
         let documentsDirectory = paths.objectAtIndex(0) as! NSString
         let path = documentsDirectory.stringByAppendingPathComponent("quizzes.plist")
@@ -116,6 +116,52 @@ class accessPlist {
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     if let event_info = dict.objectForKey(id){
                         return event_info as? NSDictionary
+                    }else{
+                        print("error_read_2")
+                    }
+                }else{
+                    print("error_read")
+                }
+            }else{
+                print("error_read")
+            }
+        }
+        return nil
+    }
+    func get_lists_set(id: String)->NSArray?{
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("checklists.plist")
+        if let dict = NSMutableDictionary(contentsOfFile: path){
+            return dict.objectForKey(id) as? NSArray
+        }else{
+            if let privPath = NSBundle.mainBundle().pathForResource("checklists", ofType: "plist"){
+                if let dict = NSMutableDictionary(contentsOfFile: privPath){
+                    if let event_info = dict.objectForKey(id){
+                        return event_info as? NSArray
+                    }else{
+                        print("error_read_2")
+                    }
+                }else{
+                    print("error_read")
+                }
+            }else{
+                print("error_read")
+            }
+        }
+        return nil
+    }
+    func get_lists_state(id: String)->NSArray?{
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("checklists.plist")
+        if let dict = NSMutableDictionary(contentsOfFile: path){
+            return dict.objectForKey(id) as? NSArray
+        }else{
+            if let privPath = NSBundle.mainBundle().pathForResource("checklists", ofType: "plist"){
+                if let dict = NSMutableDictionary(contentsOfFile: privPath){
+                    if let event_info = dict.objectForKey(id){
+                        return event_info as? NSArray
                     }else{
                         print("error_read_2")
                     }
@@ -145,6 +191,66 @@ class accessPlist {
             }
         }else{
             if let privPath = NSBundle.mainBundle().pathForResource("profile", ofType: "plist"){
+                if let dict = NSMutableDictionary(contentsOfFile: privPath){
+                    dict.setObject(value, forKey: id)
+                    if dict.writeToFile(path, atomically: true){
+                        print("plist_write")
+                    }else{
+                        print("plist_write_error")
+                    }
+                }else{
+                    print("plist_write")
+                }
+            }else{
+                print("error_find_plist")
+            }
+        }
+    }
+    func set_quiz_progress(id: String) {
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("quizzes.plist")
+        
+        if let dict = NSMutableDictionary(contentsOfFile: path){
+            dict.setObject(id, forKey: "progress")
+            if dict.writeToFile(path, atomically: true){
+                print("plist_write")
+            }else{
+                print("plist_write_error")
+            }
+        }else{
+            if let privPath = NSBundle.mainBundle().pathForResource("quizzes", ofType: "plist"){
+                if let dict = NSMutableDictionary(contentsOfFile: privPath){
+                    dict.setObject(id, forKey: "progress")
+                    if dict.writeToFile(path, atomically: true){
+                        print("plist_write")
+                    }else{
+                        print("plist_write_error")
+                    }
+                }else{
+                    print("plist_write")
+                }
+            }else{
+                print("error_find_plist")
+            }
+        }
+    }
+    func set_list_state(id: String, value:String) {
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("checklists.plist")
+        
+        if let dict = NSMutableDictionary(contentsOfFile: path){
+            dict.setObject(value, forKey: id)
+            if dict.writeToFile(path, atomically: true){
+                print("plist_write")
+            }else{
+                print("plist_write_error")
+            }
+        }else{
+            if let privPath = NSBundle.mainBundle().pathForResource("checklists", ofType: "plist"){
                 if let dict = NSMutableDictionary(contentsOfFile: privPath){
                     dict.setObject(value, forKey: id)
                     if dict.writeToFile(path, atomically: true){
